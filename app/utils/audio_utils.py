@@ -6,6 +6,11 @@ import numpy as np
 from app.config.settings import audio_queue, engine, ort_session, input_name, last_trigger_time
 from app.config.constants import CONFIDENCE_THRESHOLD, COOLDOWN_TIME
 
+
+
+
+
+
 def audio_callback(indata, frames, time, status):
     """Callback to capture audio chunks."""
     if status:
