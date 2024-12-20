@@ -40,6 +40,7 @@ def process_audio(audio_chunk):
 
     # Predict with ONNX model
     predictions = ort_session.run(None, {input_name: audio_chunk.astype(np.float32)})
+    print(predictions)
     confidence = predictions[0][0]
 
     # Check if confidence exceeds the threshold
