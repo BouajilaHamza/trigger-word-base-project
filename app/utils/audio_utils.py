@@ -1,11 +1,10 @@
 
 import time
-import threading
-import queue
 import numpy as np
-import sounddevice as sd
-import onnxruntime as ort
-import pyttsx3
+
+
+from app.config.settings import audio_queue, engine, ort_session, input_name, last_trigger_time
+from app.config.constants import CONFIDENCE_THRESHOLD, COOLDOWN_TIME
 
 def audio_callback(indata, frames, time, status):
     """Callback to capture audio chunks."""
