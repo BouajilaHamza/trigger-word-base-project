@@ -1,0 +1,12 @@
+[project]
+name = "trigger-word-base-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.2.0",
+    "onnxruntime>=1.20.1",
+    "pyttsx3>=2.98",
+    "sounddevice>=0.5.1",
+]
